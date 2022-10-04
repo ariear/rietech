@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.title-nav{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1.8px;
+    transition: .2s all ease;
+}
+.title-nav:hover{
+    color: #47B5FF;
+}
+.title-nav:hover o{
+    color: white;
+}
+.title-nav o{
+    font-weight: 500;
+    color: #47B5FF;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0 80px;
+}
+nav ul li{
+    margin: 0 20px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    transition: .2s all ease;
+}
+nav ul li:hover{
+    color: #47B5FF;
+}
+
+.side-icons i{
+    margin-right: 15px;
+    font-size: 30px;
+}
+.fa-github{
+    transition: .2s all ease;
+}
+.fa-github:hover{
+    color: #47B5FF;
+}
+.fa-bars{
+    transition: .2s all ease;
+    color: #47B5FF;
+}
+.fa-bars:hover{
+    color: white;
+}
+
+.wrap-header-img{
+    box-shadow: inset 0 90px 70px -7px rgba(0,0,0,0.9);
+}
+.header-img{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.main-content{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.main-desc-category{
+    width: max-content;
+    color: #47B5FF;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: .3s all ease;
+}
+.main-desc-category:hover{
+    color: black;
+}
+.main-desc-post{
+    width: 800px;
+    padding-right: 50px;
+}
+.main-desc-post h1{
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 0.9px;
+    margin-bottom: 5px;
+    transition: .3s all ease;
+}
+.main-desc-post h1:hover{
+    color: #47B5FF;
+}
+.main-desc-slug{
+    color: gray;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+}
+.main-desc-bottom{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.main-desc-bottom i{
+    transition: .3s all ease;
+    font-weight: 800;
+    color: #47B5FF;
+}
+.main-desc-bottom i:hover{
+    color: black;
+}
+.main-desc-bottom i o{
+    margin-left: 10px;
+}
+.main-desc-bottom p b{
+    color: black;
+    font-weight: 900;
+}
+.main-desc-bottom p{
+    transition: .3s all ease;
+    font-weight: 600;
+    color: gray;
+}
+.main-desc-bottom p:hover{
+    color: black;
+}
+
+.wrap-side-content{
+    width: 400px;
+    padding-left: 50px;
+    border-left: 1px solid gray;
+}
+.wrap-side-content h2{
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+.card-side{
+    display: flex;
+    margin-bottom: 25px;
+}
+.card-side img{
+    width: 85px;
+    height: 85px;
+    margin-right: 15px;
+}
+.slug-card-side{
+    transition: .2s all ease;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.slug-card-side:hover{
+    color: #47B5FF;
+}
+.author-card-side{
+    transition: .2s all ease;
+    width: max-content;
+    font-weight: 700;
+    color: gray;
+}
+.author-card-side:hover{
+    color: black;
+}
+.author-card-side b{
+    color: black;
+    font-weight: 900;
+}
