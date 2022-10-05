@@ -83,6 +83,9 @@ nav ul li:hover{
     display: flex;
     justify-content: center;
 }
+.left-main-content{
+    width: 800px;
+}
 .main-desc-category{
     width: max-content;
     color: #47B5FF;
@@ -94,8 +97,8 @@ nav ul li:hover{
     color: black;
 }
 .main-desc-post{
-    width: 800px;
     padding-right: 50px;
+    margin-bottom: 45px;
 }
 .main-desc-post h1{
     font-size: 36px;
@@ -158,6 +161,7 @@ nav ul li:hover{
     width: 85px;
     height: 85px;
     margin-right: 15px;
+    border-radius: 6px;
 }
 .slug-card-side{
     transition: .2s all ease;
@@ -179,4 +183,53 @@ nav ul li:hover{
 .author-card-side b{
     color: black;
     font-weight: 900;
+}
+
+
+.wrap-card-post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-post{
+    width: 360px;
+    margin-bottom: 80px;
+}
+.wrap-img-card-post{
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.wrap-img-card-post:hover img{
+    transform: scale(1.2);
+}
+.wrap-img-card-post img{
+    transition: .3s all ease;
+    width: 100%;
+    height: 210px;
+}
+.category-card-post{
+    font-weight: 600;
+    color: #47B5FF;
+    letter-spacing: 0.9px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.card-post h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.author-card-post{
+    margin-bottom: 10px;
+    color: gray;
+    letter-spacing: 0.9px;
+}
+.author-card-post b{
+    color: black;
+}
+.slug-card-post{
+    color: gray;
+    letter-spacing: 0.4px;
+    font-size: 14px;
 }
