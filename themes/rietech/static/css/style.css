@@ -252,9 +252,13 @@ nav ul li:hover{
 .card-post{
     width: 360px;
     margin-bottom: 80px;
+    text-decoration: none;
 }
 .wrap-content-card-post:hover img{
     transform: scale(1.2);
+}
+.wrap-content-card-post h3{
+    color: black;
 }
 .wrap-content-card-post:hover h3{
     color: #47B5FF;
@@ -308,4 +312,116 @@ nav ul li:hover{
     color: gray;
     letter-spacing: 0.4px;
     font-size: 14px;
+}
+
+.container{
+    padding-top: 110px;
+    width: 1200px;
+    margin: auto;
+}
+.container img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.desc-post{
+    margin: auto;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.desc-post p{
+    margin-bottom: 2px;
+    color: #47B5FF;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    transition: .3s all ease;
+}
+.desc-post p:hover{
+    color: black;
+}
+.desc-post h1{
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+
+.wrap-body{
+    display: flex;
+    justify-content: space-between;
+}
+.wrap-body aside:nth-child(1){
+    width: 200px;
+    text-align: center;
+}
+.wrap-body aside:nth-child(1) h2{
+    transition: .3s all ease;
+}
+.wrap-body aside:nth-child(1) h2:hover{
+    color: #47B5FF;
+}
+.date-post{
+    color: gray;
+    padding: 10px 0;
+    margin: 15px 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.list-tags-title{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.list-tags{
+    text-align: start;
+}
+.list-tags ul{
+    list-style: none;
+    display: flex;
+}
+.list-tags ul li{
+    background-color: #47B5FF;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.list-tags ul li:hover a{
+    color: black;
+}
+.list-tags a{
+    transition: .3s all ease;
+    color: white;
+    text-decoration: none;
+}
+.wrap-body aside:nth-child(2){
+    width: 80%;
+    padding: 0 40px;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 28px;
+}
+.wrap-body aside:nth-child(3){
+    width: 200px;
+}
+.wrap-body aside:nth-child(3) ul{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+.wrap-body aside:nth-child(3) ul li{
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    transition: .3s all ease;
+}
+.wrap-body aside:nth-child(3) ul li:hover{
+    border-color: #47B5FF;
+    color: #47B5FF;
 }
