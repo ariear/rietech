@@ -1,14 +1,22 @@
 <nav class="{{ if .IsHome }} nav-main {{ else }} sticky {{ end }}" >
-    <h2 class="title-nav">Rie<o>tech</o></h2>
+    <h2 class="title-nav"><a href="/">Rie<o>tech</o></a></h2>
     <ul>
-        <li>Home</li>
+        <li><a href="/">Home</a></li>
         <li>All Post</li>
-        <li>Categories</li>
+        <li class="nav-categories">
+            <p>Categories<i class="fa fa-solid fa-chevron-right"></i></p>
+            <ul class="nav-list-categories">
+                <li>Front End</li>
+                <li>Back End</li>
+                <li>Computer</li>
+                <li>See All</li>
+            </ul>
+        </li>
         <li>About</li>
         <li>Contact</li>
     </ul>
     <div class="side-icons">
-        <i class="fa fa-brands fa-github"></i>
+        <a href="https://github.com/ariear"><i class="fa fa-brands fa-github"></i></a>
         <i class="fa fa-solid fa-bars"></i>
     </div>
 </nav>

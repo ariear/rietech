@@ -1,1 +1,3 @@
-<p>Anjir</p>
+{{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+   <a href="{{.Permalink}}">{{.Title}}</a></li>
+{{end}}

@@ -18,13 +18,15 @@ nav{
     justify-content: space-around;
     align-items: center;
     color: white;
-    overflow: hidden;
 }
 .sticky{
     background-color: white;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
     color: black;
     padding: 12px 0;
+}
+.sticky .title-nav a{
+    color: black;
 }
 /* .nav-shadow{
     box-shadow: inset 0 65px 30px -20px rgba(0,0,0,0.9);
@@ -35,7 +37,7 @@ nav{
     letter-spacing: 1.8px;
     transition: .2s all ease;
 }
-.title-nav:hover{
+.title-nav:hover a{
     color: #47B5FF;
 }
 .sticky .title-nav:hover o{
@@ -43,6 +45,11 @@ nav{
 }
 .title-nav:hover o{
     color: white;
+}
+.title-nav a{
+    color: white;
+    text-decoration: none;
+    transition: .2s all ease;
 }
 .title-nav o{
     font-weight: 500;
@@ -63,10 +70,48 @@ nav ul li{
 nav ul li:hover{
     color: #47B5FF;
 }
+.nav-categories{
+    position: relative;
+}
+.nav-categories i{
+    transition: .3s all ease;
+    margin-left: 7px;
+}
+.nav-categories:hover i{
+    transform: rotate(90deg);
+}
+.nav-categories:hover .nav-list-categories{
+    height: 140px;
+    padding: 10px 0;
+    bottom: -165px;
+}
+.nav-list-categories{
+    transition: .3s all ease;
+    width: max-content;
+    position: absolute;
+    left: -80px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+}
+.nav-list-categories li{
+    margin-bottom: 13px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 3px;
+}
 
 .side-icons i{
     margin-right: 15px;
     font-size: 30px;
+}
+.side-icons a{
+    color: white;
 }
 .fa-github{
     transition: .2s all ease;
@@ -80,6 +125,12 @@ nav ul li:hover{
 }
 .sticky .fa-bars:hover{
     color: black;
+}
+.sticky .fa-github{
+    color: black;
+}
+.sticky .fa-github:hover{
+    color: #47B5FF;
 }
 .fa-bars:hover{
     color: white;
