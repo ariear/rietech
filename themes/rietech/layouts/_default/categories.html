@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <div class="container">
+        <h1 class="title-list">{{ .Title }}</h1>
+
+        <div class="wrap-list-categories">
+            {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}

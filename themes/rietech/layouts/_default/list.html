@@ -1,3 +1,50 @@
-{{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-   <a href="{{.Permalink}}">{{.Title}}</a></li>
-{{end}}
+{{ define "main" }}
+<div class="container">
+      <h1 class="title-list">{{ .Title }}</h1>
+
+      <div class="wrap-content-list">
+         <aside class="left-content-list">
+            {{ range .Pages }}
+            <a href="{{ .Permalink }}">
+            <div class="card-list">
+                  <div class="wrap-img-card-list">
+                     <img src="{{ .Params.featured_image }}" alt="">
+                  </div>
+                  <div class="desc-card-list">
+                     {{ with .Params.categories }}
+                     {{ range . }}
+                     <p class="categori-card-list">{{ . }}</p>
+                     {{ end }}
+                     {{ end }}
+                     <h2>{{ .Title }}</h2>
+                     <p class="ingfo-kecil-card-list"><b>By </b>{{ .Params.author }}  |  {{ .Date.Format "January 2, 2006" }}</p>
+                     <p class="excerpt-card-list">{{ or .Params.description .Summary }}</p>
+                  </div>
+               </div>
+            </a>
+            {{ end }}
+         </aside>
+         <aside class="right-content-list">
+            <div class="categories-right-content-list">
+               <h2>Categories</h2>
+               <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                  <option value="">Select or search</option>
+                  {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+                  <option value="{{ .Permalink }}">{{ .Title }}</option>
+                  {{ end }}
+               </select>
+               <a href="/all-categories" class="text-all-cate">View All Categories</a>
+            </div>
+            <div>
+               <h2>Follow Me</h2>
+               <ul class="wrap-side-medsos">
+                  <li><i class="fa fa-brands fa-facebook-f"></i><p>Facebook</p></li>
+                  <li><i class="fa fa-brands fa-instagram"></i></i><p>Instagram</p></li>
+                  <li><i class="fa fa-brands fa-github"></i><p>Github</p></li>
+                  <li><i class="fa fa-brands fa-twitter"></i><p>Twitter</p></li>
+              </ul>
+            </div>
+         </aside>
+      </div>
+</div>
+{{ end }}

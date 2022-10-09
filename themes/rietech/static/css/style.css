@@ -66,8 +66,17 @@ nav ul li{
     font-weight: 700;
     letter-spacing: 0.9px;
     transition: .2s all ease;
+    text-decoration: none;
 }
-nav ul li:hover{
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .2s all ease;
+}
+.sticky ul li a{
+    color: black;
+}
+nav ul li a:hover{
     color: #47B5FF;
 }
 .nav-categories{
@@ -104,6 +113,9 @@ nav ul li:hover{
     margin-bottom: 13px;
     border-bottom: 1px solid lightgray;
     padding-bottom: 3px;
+}
+.nav-list-categories li a{
+    color: black;
 }
 
 .side-icons i{
@@ -263,8 +275,8 @@ nav ul li:hover{
     color: #47B5FF;
 }
 .wrap-side-medsos li i{
-    width: 18px;
-    font-size: 18px;
+    width: 16px;
+    font-size: 16px;
     border-radius: 50px;
     border: 2px solid lightgray;
     padding: 10px;
@@ -279,7 +291,7 @@ nav ul li:hover{
     display: flex;
     align-items: center;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
 }
 .wrap-side-medsos li p{
     transition: .3s all ease;
@@ -475,4 +487,124 @@ nav ul li:hover{
 .wrap-body aside:nth-child(3) ul li:hover{
     border-color: #47B5FF;
     color: #47B5FF;
+}
+
+
+.title-list{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.wrap-content-list{
+    margin-bottom: 50px;
+    display: flex;
+}
+.right-content-list{
+    width: 450px;
+    padding-left: 35px;
+}
+.right-content-list h2{
+    margin-bottom: 10px;
+}
+.categories-right-content-list{
+    margin-bottom: 25px;
+}
+.categories-right-content-list select{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border-color: #47B5FF;
+    color: #47B5FF;
+    border-radius: 7px;
+}
+.text-all-cate{
+    display: block;
+    text-decoration: none;
+    color: #47B5FF;
+    font-weight: 700;
+}
+
+.left-content-list{
+    border-right: 2px solid lightgray;
+    flex-grow: 1;
+    padding-right: 30px;
+}
+
+.left-content-list a{
+    text-decoration: none;
+    color: black;
+}
+.card-list{
+    display: flex;
+    margin-bottom: 40px;
+}
+.card-list img{
+    margin-bottom: 0;
+    transform: scale(1.07);
+    transition: .3s all ease;
+    width: 100%;
+}
+.card-list:hover img{
+    transform: scale(1.2);
+}
+.desc-card-list{
+    width: 80%;
+}
+.wrap-img-card-list{
+    width: 450px;
+    border-radius: 10px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.card-list h2{
+    width: max-content;
+    margin-bottom: 10px;
+    transition: .3s all ease;
+}
+.card-list h2:hover{
+    color: #47B5FF;
+}
+.categori-card-list{
+    color: #47B5FF;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .3s all ease;
+    margin-bottom: 5px;
+}
+.categori-card-list:hover{
+    color: black;
+}
+.ingfo-kecil-card-list{
+    margin-bottom: 10px;
+    color: gray;
+    letter-spacing: 1.1px;
+}
+.ingfo-kecil-card-list b{
+    color: black;
+}
+.excerpt-card-list{
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: gray
+}
+
+.wrap-list-categories{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap-list-categories a{
+    text-decoration: none;
+    background-color: #47B5FF;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    transition: .3s all ease;
+}
+.wrap-list-categories a:hover{
+    background-color: #3b8fc7;
 }
