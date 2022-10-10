@@ -608,3 +608,26 @@ nav ul li a:hover{
 .wrap-list-categories a:hover{
     background-color: #3b8fc7;
 }
+
+
+.desc-pg{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    background-color: #47B5FF;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+}
+.wrap-contact-page{
+    padding-top: 20px;
+    font-size: 32px;
+}
+.wrap-contact-page a{
+    transition: .3s all ease;
+    color: white;
+    margin-right: 10px;
+}
+.wrap-contact-page a:hover{
+    color: black;
+}
